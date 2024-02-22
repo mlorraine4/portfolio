@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/output.css')
+  body(class="font-Montserrat")
+    #navbar
+      a(href="/home" class="p-5 font-semibold hover:text-white hover:bg-dark-purple rounded-lg") home
+      a(href="/portfolio" class="p-5 font-semibold hover:text-white hover:bg-dark-purple rounded-lg") projects
+      a(href="/about" class="p-5 font-semibold hover:text-white hover:bg-dark-purple rounded-lg") about
+    block content
