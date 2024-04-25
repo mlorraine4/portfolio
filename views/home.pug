@@ -6,51 +6,78 @@ block content
             div(class="w-1/3")
                 div(class="text-5xl") Hi, I'm Maria
                 div(class="flex mt-4")
-                    div(class="w-8 h-8 m-2 bg-github bg-cover hover:bg-github-purple")
-                    div(class="w-8 h-8 m-2 bg-email bg-cover hover:bg-email-purple")
-                    button fake
+                    div(class="w-9 h-9 m-2 bg-github bg-cover hover:bg-github-hover")
+                    div(class="w-9 h-9 m-2 bg-email bg-cover hover:bg-email-hover")
+                    div(class="w-8 h-8 m-2 bg-li bg-cover hover:bg-li-hover")
                 div(class="text-2xl mt-4") I enjoy creating art, reading fantastical stories, and watching my fish tanks.
             div(class="w-1/3 text-center") cute pixel art here
     div
-        div Skills
-        div(class="w-2/3 m-auto flex justify-evenly")
-            div#skill(class="font-semibold bg-black") React
-            div Node.js
-            div MongoDB 
-            div JS 
-            div HTML 
-            div CSS 
-            div Firebase
+        div(class="text-3xl font-extrabold text-medium-gradient m-20") My Skills
+        div(class="w-2/3 m-auto flex flex-wrap justify-center")
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") React
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Node.js
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") MongoDB 
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") JS 
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") HTML 
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") CSS 
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Firebase
+            div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Nginx
         div pixel art of a computer
         div maybe a short bio?
-    div(class="m-20") 
-        div My Projects
+    div(class="text-3xl font-extrabold text-medium-gradient m-20") My Projects
+    div(class="m-20")
+        //- fumblr
         div(class="flex justify-around flex-wrap")
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center")
-                div(class="bg-dark-purple w-full")
+            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
+                div(class="bg-dark-purple w-full p-6")
                     div(class="text-white underline text-center") Personal Project
-                    div(class="text-white text-4xl text-center p-5") Fumblr
-                div(class="flex justify-evenly w-full m-5")
-                    div(class="font-semibold bg-black text-white p-1.5") Node.js
-                    div(class="font-semibold bg-black text-white p-1.5") MongoDB 
-                    div(class="font-semibold bg-black text-white p-1.5") JS 
-                    div(class="font-semibold bg-black text-white p-1.5") HTML 
-                    div(class="font-semibold bg-black text-white p-1.5") CSS 
-                    div(class="font-semibold bg-black text-white p-1.5") Firebase
-                div(class="p-4 text-2xl") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
-                img(src="/images/fumblr_preview.png")
-                a(class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center")
-                div(class="bg-dark-purple w-full")
+                    div(class="text-white text-4xl text-center p-2") Fumblr
+                div(class="flex justify-center w-4/5 m-5")
+                    div
+                        img(src="images/icons/react.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                    div
+                        img(src="images/icons/firebase.png" class="m-auto h-10 w-10")  
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Firebase
+                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
+                img(src="/images/fumblr_1.bmp" class="w-11/12")
+                a(href="/projects/fumblr" class="bg-warm-lavender rounded w-28 p-2 text-center m-5 hover:bg-sea-foam hover:cursor-pointer") Learn more
+            //- glass gardens
+            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
+                div(class="bg-dark-purple w-full p-6")
                     div(class="text-white underline text-center") Personal Project
-                    div(class="text-white text-4xl text-center p-5") Fumblr
-                div(class="p-4") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
-                img(src="/images/fumblr_preview.png")
-                a(class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center")
-                div(class="bg-dark-purple w-full")
+                    div(class="text-white text-4xl text-center p-2") Glass Gardens
+                div(class="flex justify-center w-4/5 m-5")
+                    div
+                        img(src="images/icons/react.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Shop beautiful, aqua-cultured corals at a great price at Glass Gardens.
+                img(src="/images/gg_1.bmp" class="w-11/12")
+                a(href="/projects/glass-gardens" class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more
+            //- battleship
+            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
+                div(class="bg-dark-purple w-full p-6")
                     div(class="text-white underline text-center") Personal Project
-                    div(class="text-white text-4xl text-center p-5") Fumblr
-                div(class="p-4") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
-                img(src="/images/fumblr_preview.png")
-                a(class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more
+                    div(class="text-white text-4xl text-center p-2") Battleship
+                div(class="flex justify-center w-4/5 m-5")
+                    div
+                        img(src="images/icons/js.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Javascript
+                    div
+                        img(src="images/icons/webpack.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Webpack
+                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Find and sink your enemy's ships before they can destroy your own.
+                img(src="/images/battle_1.bmp" class="w-11/12")
+                a(href="/projects/battleship" class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more
+            //- garden of pages
+            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
+                div(class="bg-dark-purple w-full p-6")
+                    div(class="text-white underline text-center") Personal Project
+                    div(class="text-white text-4xl text-center p-2") Garden of Pages
+                div(class="flex justify-center w-4/5 m-5")
+                    div
+                        img(src="images/icons/react.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Follow my blog to see my reviews on your favorite books and checkout upcoming releases.
+                img(src="/images/gg_1.bmp" class="w-11/12")
+                a(href="/projects/glass-gardens" class="bg-warm-lavender rounded w-28 p-2 text-center m-5") Learn more

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    div Strife
+    a(href="strife.mariasilvia.me") Live Demo
+    div Need new ways to chat? Connect with friends, see who's online, and get real-time messages from users using Strife.
+    div Stack List: Node.js, Express, Mongoose, Pug, CSS, Socket.io, Passport, BycrptJS
+    div Goals
+    div Strife is my submission to The Odin Project's Messaging App project. The goal of this project is to create an app that authorizes users, where users can: send messages between each other, customize their profile, send friend requests/see their friend list, view who's currently online
+    div Development Stack
+    div The webserver is built with Node.js, and routes/view system/and http helpers are handled by Express.  The backend is built with Node.js and Express because it allows webservers to be written in JS. For the database, I used Mongoose since it provides an organized data structure using consisent models (schemas). Users are authorized with passport local strategies because it integrates easily with Mongoose User data. In order to keep user views dynamically updated, I used socket.io which send updates when messages/friend requests are sent, or users go offline.
+    div Development Process/Issues
+    div To start this project, I thought about what models I would need for my database and how those would relate. It was fairly straight forward: I knew I needed a User model and a Message model, as well as a model to save participants in chats. I took inspiration for the website design from Discord (as well as the name) since it is my most used messaging app. I choose to use mongoose, passport, and passport-local strategy for user data, authentication and session persistence since I've created previous projects using them before. This is the first project where I wanted to create dynamic pages without react, so finding the right technology and implementing it properly took most of my time. I had difficulties initializing a socket.io server, and looked to Stack Overflow and tried many different solutions. I learned a few lessons developing this project: to look first at a technologies own docs for troubleshooting, and to read them carefully before trying to implement them. I found that I was creating more problems and writing unneccessary code by looking at other people's issues instead of addressing my own directly. Fully understanding how a library or tool works can change how your application is structured, so in the future I will do as much research as I can before writing any code. 
+
+
+    //- title
+    //- tag-line
+    //- image 1
+    //- technologies/Development Stack list
+    //- live demo link
+    //- Goals
+    //- Development Stack Descriptions
+    //- Development Process/Issues
+    //- image 2

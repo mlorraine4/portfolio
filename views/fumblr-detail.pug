@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    div(class="pt-20 mb-10")
+        div(class="flex flex-col items-center")
+            div(class="font-bold text-3xl text-dark-lavender") Fumblr: a blogging social media app
+            div(class="text-xl m-4") Follow your favorite bloggers, share posts, and customize your profile with Fumblr.
+            a#header(href="https://mlorraine4.github.io/fumblr/" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") LIVE DEMO
+        div#bg(class="flex flex-col w-3/4 m-auto max-w-[1860px]")
+            div(class="text-medium-gradient font-bold text-2xl p-2 m-5 w-min") Stack
+            div(class="flex ml-5 mb-10")
+                div
+                    img(src="../images/react.png" class="m-auto h-10 w-10")
+                    div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                div
+                    img(src="../images/firebase.png" class="m-auto h-10 w-10")  
+                    div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Firebase
+            //- target blank and noopener opens in a new tab and prevents tab nabbing
+            img(src="../images/fumblr_2.png" class="w-4/5 m-auto")
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Project Goals
+            div(class="m-5 text-lg") Fumblr is a social media app inspired by Tumblr. The goal of this project was to create a React social media app where users can make profiles, interact with other users, and make their own posts.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Stack
+            div(class="m-5 text-lg") The front end for Fumblr is built using React, and for the backend I used Firebase's Storage (for images), Realtime Database (for user data), and Authorization.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Process
+            div(class="m-5 text-lg") I chose React for the front end of this project to strengthen my knowledge of React and to satisfy The Odin Project's requirements. I had used Firebase databases in previous projects so I decided to use it for this as well. I knew I wanted to push myself in terms of site functionality and I wanted Fumblr to feel as close to a fully developed social media app as possible. Along with having users create and like posts, I added messaging/chatting, real-time notifications, profile customization, and a light/dark theme. I really enjoyed learning how to implement new features that I hadn't developed before, and designing the front end for this app.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Lessons Learned      
+            div(class="m-5 text-lg") This is the first project I've developed that has real-time notifications (by using React's effect hooks as well as firebase's database listeners), uploading/saving image files, and a chatting feature. Fumblr helped me get more comfortable creating apps using React and understand the processes behind it. It was good practice in learning new technologies through their documentation, as well as creating an app with multiple features.
+
+    //- title
+    //- tag-line
+    //- image 1
+    //- technologies/Development Stack list
+    //- live demo link
+    //- Goals
+    //- Development Stack Descriptions
+    //- Development Process/Issues
+    //- image 2
+    //- Future/Lessons Learned/Take away ?? what to name this section

@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    div(class="pt-20 mb-10")
+        div(class="flex flex-col items-center")
+            div(class="font-bold text-3xl text-dark-lavender") Battleship
+            div(class="text-xl m-4") Play the classic game of battleship and sink all your enemy's ships.
+            a#header(href="https://mlorraine4.github.io/battleship/" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") LIVE DEMO
+        div#bg(class="flex flex-col w-3/4 m-auto max-w-[1860px]")
+            div(class="text-medium-gradient font-bold text-2xl p-2 m-5 w-min") Stack
+            div(class="flex ml-5 mb-10")
+                div
+                    img(src="../images/icons/js.png" class="m-auto h-10 w-10")
+                    div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Javascript
+                div
+                    img(src="../images/icons/webpack.png" class="m-auto h-10 w-10")  
+                    div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Webpack
+            //- target blank and noopener opens in a new tab and prevents tab nabbing
+            img(src="../images/battle_3.bmp" class="w-4/5 shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Project Goals
+            div(class="m-5 text-lg") This project is my submission for The Odin Project's 
+                a(href="https://www.theodinproject.com/lessons/node-path-javascript-battleship" target="_blank" rel="noopener noreferrer" class="text-accent-dk-coral font-bold") Battleship Game. 
+                | The focus of this app is to practice Test Drive Developement while creating a game of Battleship. Players need to be able to choose their ship locations and take turns trying to hit/guess where their enemy's ships are. The first player to sink all 5 of their enemy's ships is the winner.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Stack
+            div(class="m-5 text-lg") The front end for this project is built with Javascript and CSS. I used webpack to bundle all files/assests.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Process
+            div(class="m-5 text-lg") I created classes for Players, Gameboards, and Ships. Each player has a turn boolean and a moves array. Ship classes have a size/length and a hit count. Each player has their own gameboard with X coordinates from 1-10 and Y coordinates from A-J. A player's gameboard saves the ships locations, determines if an enemy attack has hit a ship, and checks each turn if all ships have been sunk. The most challenging part of developing Battleship was randomizing enemy ship placement, as well as the functionality for a drag and drop controller for the player's ship. For enemy ships, a random direction is chosen, as well as a random starting point, and the coordinates are returned to a do...while loop that runs until a set of coordinates returned is not currently occupied.
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Issues
+            div(class="m-5 text-lg") I ran into issues using a drag and drop controller for the player ships. The player drags the ship onto the board, and each valid direction the ship can be placed on is highlighted. I wasn't thinking about how a player might interact with the board, maybe they would drop the ship on the board mulitple times until they decided on a location. I realized I wasn't clearing the saved information for the previous drops, and had introduced bugs when the player chose a direction for their ship. 
+            div(class="text-2xl font-bold m-5 text-medium-gradient") Lessons Learned      
+            div(class="m-5 text-lg") This is my first project developing a more complex game, and I felt overwhelmed at first on where to start. Creating Battleship was great practice in coding step by step. Planning out the game logic for each interaction helped write pure, testable functions. I learned that user interactions can be unpredictable, and to keep that in mind when coding any game or application.
+            img(src="../images/battle_2.bmp" class="w-4/5 shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
