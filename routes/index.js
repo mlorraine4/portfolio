@@ -6,6 +6,10 @@ router.get("/", function (req, res, next) {
   res.render("home");
 });
 
+router.get("/resume", function (req, res, next) {
+  res.render("resume");
+});
+
 router.get("/projects/fumblr", function (req, res, next) {
   res.render("fumblr-detail");
 });
