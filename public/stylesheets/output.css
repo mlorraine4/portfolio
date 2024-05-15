@@ -546,12 +546,36 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.left-10{
+  left: 2.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
 .m-10{
   margin: 2.5rem;
+}
+
+.m-12{
+  margin: 3rem;
 }
 
 .m-2{
@@ -580,6 +604,10 @@ video {
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-4{
@@ -642,8 +670,16 @@ video {
   height: 200px;
 }
 
+.h-\[80px\]{
+  height: 80px;
+}
+
 .h-\[96px\]{
   height: 96px;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .h-full{
@@ -675,6 +711,10 @@ video {
   width: 3rem;
 }
 
+.w-2\/3{
+  width: 66.666667%;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -697,6 +737,10 @@ video {
 
 .w-7{
   width: 1.75rem;
+}
+
+.w-\[100px\]{
+  width: 100px;
 }
 
 .w-\[500px\]{
@@ -728,8 +772,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -756,6 +808,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.bg-\[\#D159EE\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 89 238 / var(--tw-bg-opacity));
+}
+
 .bg-dark-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(64 4 76 / var(--tw-bg-opacity));
@@ -764,11 +821,6 @@ video {
 .bg-violet-950{
   --tw-bg-opacity: 1;
   background-color: rgb(46 16 101 / var(--tw-bg-opacity));
-}
-
-.bg-warm-lavender{
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 158 245 / var(--tw-bg-opacity));
 }
 
 .bg-email-pink{
@@ -807,6 +859,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-20{
+  padding: 5rem;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -819,12 +875,16 @@ video {
   padding: 1.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -848,16 +908,6 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -933,6 +983,12 @@ button {
   background-color: #f5c19e;
 }
 
+#back {
+  background-image: url("../images/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #navbar {
   position: absolute;
   top: 10px;
@@ -947,16 +1003,37 @@ button {
   align-items: center;
 }
 
-#header {
+#demo {
   background-image: linear-gradient(#ee9559, #ee9559);
   background-size: 110% 6px;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 0% 100%;
   transition: background-size 0.7s, background-position 0.5s ease-in-out;
   padding: 0 5px 0 5px;
+  width: 150px;
+  text-align: center;
 }
 
-#header:hover {
+#demo:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.7s, background-size 0.5s ease-in-out,
+    color 0.5s ease-in-out;
+  color: white;
+}
+
+#code {
+  background-image: linear-gradient(#59b2ee, #59b2ee);
+  background-size: 110% 6px;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  transition: background-size 0.7s, background-position 0.5s ease-in-out;
+  padding: 0 5px 0 5px;
+  width: 150px;
+  text-align: center;
+}
+
+#code:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
   transition: background-position 0.7s, background-size 0.5s ease-in-out,
@@ -966,12 +1043,6 @@ button {
 
 #bg {
   background-color: rgb(134, 151, 220, 0.2);
-}
-
-#what {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 /* width */
@@ -1018,18 +1089,14 @@ button {
   }
 }
 
-.hover\:cursor-pointer:hover{
-  cursor: pointer;
-}
-
 .hover\:bg-dark-purple:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(64 4 76 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-sea-foam:hover{
+.hover\:bg-warm-lavender:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(158 245 228 / var(--tw-bg-opacity));
+  background-color: rgb(228 158 245 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-email-light:hover{

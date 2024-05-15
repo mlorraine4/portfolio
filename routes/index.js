@@ -6,8 +6,8 @@ router.get("/", function (req, res, next) {
   res.render("home");
 });
 
-router.get("/resume", function (req, res, next) {
-  res.render("resume");
+router.get("/projects/garden-of-pages", function (req, res, next) {
+  res.render("gardenofpages-detail");
 });
 
 router.get("/projects/fumblr", function (req, res, next) {

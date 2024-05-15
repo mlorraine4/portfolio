@@ -1,36 +1,29 @@
-extends layout
+extends detail-layout
 
 block content
-    div(class="pt-20 mb-10")
+    div(class="p-20")
         div(class="flex flex-col items-center")
-            div(class="font-bold text-3xl text-dark-lavender") Glass Gardens: a mock shopping cart
+            div(class="font-bold text-4xl text-dark-lavender") Glass Gardens: a mock shopping cart
             div(class="text-xl m-4") Browse unique corals, learn more about reef keeping, and fill your home reefs with our collection of corals.
-            a#header(href="https://mlorraine4.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") LIVE DEMO
-            //- target blank and noopener opens in a new tab and prevents tab nabbing
-        div#bg(class="flex flex-col w-3/4 m-auto max-w-[1860px]")
-            div(class="text-medium-gradient font-bold text-2xl p-2 m-5 w-min") Stack
-            div(class="flex ml-5 mb-10")
-                div
-                    img(src="../images/react.png" class="m-auto h-10 w-10")
-                    div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
-            img(src="../images/gg_1.bmp" class="w-4/5 shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
-            div(class="text-2xl font-bold m-5 text-medium-gradient") Project Goals
-            div(class="m-5 text-lg") The goal of this project is to create a mock Shopping Cart app that has a homepage as well as a checkout page that allows users to add items to their cart.
-            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Stack
-            div(class="m-5 text-lg") Glass Gardens is built solely with React for The Odin Project's 
-                a(href="https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart" target="_blank" rel="noopener noreferrer" class="text-accent-dk-coral font-bold") Shopping Cart.
-            div(class="text-2xl font-bold m-5 text-medium-gradient") Development Process
-            div(class="m-5 text-lg") Glass Gardens is one of my beginner projects for React. Most of my time spent developing Glass Gardens was focused on the design for the site. I wanted the homepage to feel like an authentic coral shop, so I went for a more maximal design by adding informational sections, product links, and a slide-show of the shop's corals.
-            div(class="text-2xl font-bold m-5 text-medium-gradient") Lessons Learned      
-            div(class="m-5 text-lg") I really enjoyed coming up with the design elements for Glass Gardens. This project taught me the benefit of being able to map components, especially when working with large sets of data.
-            img(src="../images/gg_2.bmp" class="w-4/5 shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
-    //- title
-    //- tag-line
-    //- image 1
-    //- technologies/Development Stack list
-    //- live demo link
-    //- Goals
-    //- Development Stack Descriptions
-    //- Development Process/Issues
-    //- image 2
-    //- Future/Lessons Learned/Take away ?? what to name this section
+            div(class="flex justify-center")
+                a#demo(href="https://mlorraine4.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") LIVE DEMO
+                a#code(href="https://github.com/mlorraine4/shopping-cart" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") CODE
+        div#bg(class="w-3/4 m-auto max-w-[1860px] pt-10 pb-10")
+            div(class="w-2/3 flex flex-col items-center m-auto")
+                div(class="text-medium-gradient font-bold text-3xl p-2 m-5 w-min") Stack
+                div(class="flex mb-10")
+                    div
+                        img(src="../images/icons/react.png" class="m-auto h-12 w-12")
+                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                img(src="../images/gg_1.bmp" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
+                div(class="text-3xl font-bold m-5 text-medium-gradient") Project Goals
+                div(class="m-5 text-xl") Glass gardens is my submission for The Odin Project's 
+                    a(href="https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart" target="_blank" rel="noopener noreferrer" class="text-accent-dk-coral font-bold") Shopping Cart app.
+                    |  The goal of this project is to create a mock Shopping Cart app that has a homepage as well as a checkout page that allows users to add items to their cart.
+                div(class="text-3xl font-bold m-5 text-medium-gradient") Development Stack
+                div(class="m-5 text-xl") Glass Gardens is built solely with React.
+                div(class="text-3xl font-bold m-5 text-medium-gradient") Development Process
+                div(class="m-5 text-xl") Glass Gardens is one of my beginner projects for React. Most of my time spent developing Glass Gardens was focused on the design for the site. I wanted the homepage to feel like an authentic coral shop, so I went for a more maximal design by adding informational sections, product links, and a slide-show of the shop's corals.
+                div(class="text-3xl font-bold m-5 text-medium-gradient") Lessons Learned      
+                div(class="m-5 text-xl") I really enjoyed coming up with the design elements for Glass Gardens. This project taught me the benefit of being able to map components, especially when working with large sets of data.
+                img(src="../images/gg_2.bmp" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
