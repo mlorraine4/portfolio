@@ -574,10 +574,6 @@ video {
   margin: 2.5rem;
 }
 
-.m-12{
-  margin: 3rem;
-}
-
 .m-2{
   margin: 0.5rem;
 }
@@ -666,16 +662,20 @@ video {
   height: 1.75rem;
 }
 
+.h-\[20\%\]{
+  height: 20%;
+}
+
 .h-\[200px\]{
   height: 200px;
 }
 
-.h-\[80px\]{
-  height: 80px;
+.h-\[800px\]{
+  height: 800px;
 }
 
-.h-\[96px\]{
-  height: 96px;
+.h-\[80px\]{
+  height: 80px;
 }
 
 .h-auto{
@@ -684,11 +684,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-min{
-  height: -moz-min-content;
-  height: min-content;
 }
 
 .w-1\/2{
@@ -760,6 +755,11 @@ video {
   width: min-content;
 }
 
+.min-w-min{
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
 .max-w-\[1860px\]{
   max-width: 1860px;
 }
@@ -796,6 +796,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-ellipsis{
+  text-overflow: ellipsis;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -813,9 +817,14 @@ video {
   background-color: rgb(209 89 238 / var(--tw-bg-opacity));
 }
 
-.bg-dark-purple{
+.bg-accent-dk-coral{
   --tw-bg-opacity: 1;
-  background-color: rgb(64 4 76 / var(--tw-bg-opacity));
+  background-color: rgb(238 149 89 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
 }
 
 .bg-violet-950{
@@ -853,6 +862,10 @@ video {
 
 .p-1{
   padding: 0.25rem;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .p-2{
@@ -910,6 +923,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -952,6 +970,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-indigo-950{
+  --tw-text-opacity: 1;
+  color: rgb(30 27 75 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -981,6 +1004,10 @@ body {
 
 button {
   background-color: #f5c19e;
+}
+
+#hi {
+  /* background-color: rgb(255, 255, 255, 0.5); */
 }
 
 #back {
@@ -1089,9 +1116,9 @@ button {
   }
 }
 
-.hover\:bg-dark-purple:hover{
+.hover\:bg-medium-gradient:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(64 4 76 / var(--tw-bg-opacity));
+  background-color: rgb(134 151 220 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-warm-lavender:hover{

@@ -3,9 +3,9 @@ extends layout
 block content
     div#grad
         div(class="w-4/5 m-auto flex justify-around items-center")
-            div(class="w-1/3")
-                div(class="text-3xl") Hi, 
-                span(class="text-4xl") I'm Maria!
+            div#hi(class="w-1/3")
+                div(class="text-4xl") Hi, 
+                span(class="text-5xl") I'm Maria!
                 div(class="flex mt-4")
                     div(class="w-12 h-12 m-2 bg-github-purple bg-cover hover:bg-github-pink")
                         a(href="https://github.com/mlorraine4" target="_blank" rel="noopener noreferrer" class="w-full h-full block")
@@ -15,82 +15,91 @@ block content
                         a(href="https://www.linkedin.com/in/maria-l-silvia/" target="_blank" rel="noopener noreferrer" class="w-full h-full block")
                 div(class="text-2xl mt-4") I like making art, reading fantastical stories, and hanging out with my two cats.
             img(src="images/self.png" class="w-[60%] text-center ")
-    div
-        div(class="text-4xl font-extrabold text-medium-gradient m-20") My Skills
+    div(class="m-20")
+        div(class="text-4xl font-extrabold text-medium-gradient p-10") My Skills
         div(class="w-5/6 m-auto flex justify-around items-center")
             img(src="images/laptop.png" class="w-[500px]")
             div(class="w-1/3 flex flex-wrap justify-center")
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") React
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Node.js
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") MongoDB 
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") JS 
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") HTML 
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") CSS 
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Firebase
-                div(class="font-semibold bg-violet-950 text-xl text-white p-2 m-4") Nginx
-    div#projects(class="text-4xl font-extrabold text-medium-gradient m-20") My Projects
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") Javascript 
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") HTML 
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") CSS
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") React.js
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") Node.js
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") MongoDB 
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") Firebase
+                div(class="font-semibold bg-indigo-950  text-xl text-white p-2 m-4") Nginx
     div(class="m-20")
+        div#projects(class="text-4xl font-extrabold text-medium-gradient p-10") My Projects
         div(class="flex justify-around flex-wrap")
             //- garden of pages
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
-                div(class="bg-dark-purple w-full p-6")
+            div(class="flex flex-col rounded-xl w-5/12 h-[800px] overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8 min-w-min")
+                div(class="bg-indigo-950 w-full p-6 h-[20%] flex flex-col items-center justify-center")
                     div(class="text-white underline text-center") Personal Project
                     div(class="text-white text-4xl text-center p-2") Garden of Pages
                 div(class="flex justify-center w-4/5 m-5")
-                    div
-                        img(src="images/icons/react.png" class="m-auto h-10 w-10")
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
-                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Follow my blog to see my reviews on your favorite books and checkout upcoming releases.
-                img(src="/images/gg_1.bmp" class="w-11/12")
+                    div(class="flex flex-col items-end")
+                        img(src="images/icons/js.png" class="m-auto h-10 w-10")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Javascript
+                    div(class="flex flex-col items-end")
+                        img(src="/images/icons/node.png" class="m-auto h-auto w-12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Node.js
+                    div(class="flex flex-col items-end")
+                        img(src="/images/icons/mongodb.png" class="m-auto h-auto w-12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") MongoDB
+                    div(class="flex flex-col items-end")
+                        img(src="/images/icons/firebase.png" class="m-auto h-auto w-12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Firebase
+                div(class="mb-4 text-2xl h-[20%] text-center ml-5 mr-5 overflow-ellipsis") A blog for book reviews and reading summaries.
+                img(src="/images/gop_1.JPG" class="w-11/12 shadow-lg")
                 a(href="/projects/garden-of-pages" class="bg-[#D159EE] hover:bg-warm-lavender text-white font-bold rounded w-28 p-2 text-center m-5") Learn more
             //- fumblr
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
-                div(class="bg-dark-purple w-full p-6")
+            div(class="flex flex-col rounded-xl w-5/12 h-[800px] overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8 min-w-min")
+                div(class="bg-indigo-950 w-full p-6 h-[20%] flex flex-col items-center justify-center")
                     div(class="text-white underline text-center") Personal Project
                     div(class="text-white text-4xl text-center p-2") Fumblr
                 div(class="flex justify-center w-4/5 m-5")
                     div
                         img(src="images/icons/react.png" class="m-auto h-10 w-10")
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") React.js
                     div
                         img(src="images/icons/firebase.png" class="m-auto h-10 w-10")  
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Firebase
-                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
-                img(src="/images/fumblr_1.bmp" class="w-11/12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Firebase
+                div(class="mb-4 text-2xl h-[20%] text-center ml-5 mr-5 overflow-ellipsis") A social media app to share and explore your interests. Follow your favorite blogs to see what they're up to!
+                img(src="/images/fumblr_1.bmp" class="w-11/12 shadow-lg")
                 a(href="/projects/fumblr" class="bg-[#D159EE] hover:bg-warm-lavender text-white font-bold rounded w-28 p-2 text-center m-5") Learn more
             //- glass gardens
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
-                div(class="bg-dark-purple w-full p-6")
+            div(class="flex flex-col rounded-xl w-5/12 h-[800px] overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8 min-w-min")
+                div(class="bg-indigo-950 w-full p-6 h-[20%] flex flex-col items-center justify-center")
                     div(class="text-white underline text-center") Personal Project
                     div(class="text-white text-4xl text-center p-2") Glass Gardens
                 div(class="flex justify-center w-4/5 m-5")
                     div
                         img(src="images/icons/react.png" class="m-auto h-10 w-10")
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") React
-                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Shop beautiful, aqua-cultured corals at a great price at Glass Gardens.
-                img(src="/images/gg_1.bmp" class="w-11/12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") React.js
+                div(class="mb-4 text-2xl h-[20%] text-center ml-5 mr-5 overflow-ellipsis") Shop beautiful, aqua-cultured corals at a great price at Glass Gardens.
+                img(src="/images/gg_1.bmp" class="w-11/12 shadow-lg")
                 a(href="/projects/glass-gardens" class="bg-[#D159EE] hover:bg-warm-lavender text-white font-bold rounded w-28 p-2 text-center m-5") Learn more
             //- battleship
-            div(class="flex flex-col rounded-xl w-5/12 h-min overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8")
-                div(class="bg-dark-purple w-full p-6")
+            div(class="flex flex-col rounded-xl w-5/12 h-[800px] overflow-hidden items-center shadow-lg shadow-indigo-500/40 m-8 min-w-min")
+                div(class="bg-indigo-950 w-full p-6 h-[20%] flex flex-col items-center justify-center")
                     div(class="text-white underline text-center") Personal Project
                     div(class="text-white text-4xl text-center p-2") Battleship
                 div(class="flex justify-center w-4/5 m-5")
                     div
                         img(src="images/icons/js.png" class="m-auto h-10 w-10")
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Javascript
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Javascript
                     div
                         img(src="images/icons/webpack.png" class="m-auto h-10 w-10")
-                        div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Webpack
-                div(class="mb-4 text-2xl h-[96px] text-center ml-5 mr-5") Find and sink your enemy's ships before they can destroy your own.
-                img(src="/images/battle_1.bmp" class="w-11/12")
+                        div(class="font-semibold bg-accent-dk-coral text-white p-1 text-center m-2") Webpack
+                div(class="mb-4 text-2xl h-[20%] text-center ml-5 mr-5 overflow-ellipsis") Find and sink your enemy's ships before they can destroy your own.
+                img(src="/images/battle_1.bmp" class="w-11/12 shadow-lg")
                 a(href="/projects/battleship" class="bg-[#D159EE] hover:bg-warm-lavender text-white font-bold rounded w-28 p-2 text-center m-5") Learn more
         #top-link(class="relative w-[500px] m-auto")
-            a(href="https://mlorraine4.github.io/" class="mt-10 block text-center text-2xl text-accent-dk-coral") View all my projects for The Odin Project
-        div#about(class="text-4xl font-extrabold text-medium-gradient m-20") About Me
+            a(href="https://mlorraine4.github.io/" target="_blank" rel="noopener noreferrer" class="mt-10 block text-center text-2xl text-accent-dk-coral") View all my projects for The Odin Project
+        div#about(class="text-4xl font-extrabold text-medium-gradient p-10") About Me
         div(class="w-1/2 m-auto p-5")
-            div(class="text-2xl font-bold text-dark-purple pb-2") As a developer
+            div(class="text-2xl font-bold text-indigo-950 pb-2") As a developer
             div(class="text-xl") I've loved math and art since I was a kid, where I assumed one day I'd have to pick one or the other. I was drawn to the endless possibilities logically, as well as creatively, of designing a website. I use each project as a way of exploring new colors and layouts, that reflect the goals of a website. I look forward to growing as a software developer, learning new technologies, and focusing on writing code that is organized and efficient.
         div(class="w-1/2 m-auto p-5")
-            div(class="text-2xl font-bold text-dark-purple pb-2") As a human
-            div(class="text-xl") I've been making art most of my life, mainly with different types of paints, but also pastels, clay, and ink. Recently, I've been practicing anime and pixel art styles with digital art. I love to cook and learn new recipes, especially korean food. I spend a lot of my free time reading fantasy novels and maintaining my fish tanks. I happily own too many plants, and every year hope to make my garden a little bigger.   
+            div(class="text-2xl font-bold text-indigo-950 pb-2") As a human
+            div(class="text-xl") I've been making art most of my life, mainly with different types of paints, but also pastels, clay, and ink. Recently, I've been practicing anime and pixel art styles with digital art. I love to cook and learn new recipes, especially korean food. I happily own too many plants, and every year hope to make my garden a little bigger. I spend a lot of my free time reading fantasy novels, watching anime, and maintaining my fish tanks.   

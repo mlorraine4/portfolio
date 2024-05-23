@@ -3,11 +3,11 @@ extends detail-layout
 block content
     div(class="p-20")
         div(class="flex flex-col items-center")
-            div(class="font-bold text-4xl text-dark-lavender") Garden of Pages
-            div(class="text-xl m-4") My blog for anything bookish related: mostly posts about the books I've read each month as well as book reviews.
+            div(class="font-bold text-4xl text-dark-lavender m-10") Garden of Pages
+            div(class="text-2xl") A bookish blog to post reviews and monthly wrap ups.
             div(class="flex justify-center")
-                a#demo(href="https://gardenofpages.mariasilvia.me" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-12") LIVE DEMO
-                a#code(href="https://github.com/mlorraine4/TOP-blog-api" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-12") CODE
+                a#demo(href="https://gardenofpages.mariasilvia.me" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") LIVE DEMO
+                a#code(href="https://github.com/mlorraine4/TOP-blog-api" target="_blank" rel="noopener noreferrer" class="font-bold text-xl m-10") CODE
         div#bg(class="w-3/4 m-auto max-w-[1860px] pt-10 pb-10")
             div(class="w-2/3 flex flex-col items-center m-auto")
                 div(class="text-medium-gradient font-bold text-3xl p-2 m-5 w-min") Stack
@@ -30,13 +30,12 @@ block content
                     div(class="flex flex-col items-end")
                         img(src="../images/icons/tailwindcss.png" class="m-auto h-auto w-12")
                         div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") TailwindCSS
-                img(src="../images/gg_1.bmp" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
+                img(src="../images/gop_1.JPG" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Project Goals
                 div(class="m-5 text-xl") I wanted to make my own blog website where I could add books I've read, view them by which month I read them in, and add reviews. I wanted users to be able to see all my posts, and one admin to perform CRUD operations on posts.
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Development Stack
-                div(class="m-5 text-xl") I created the webserver using Node.js, along with Express to handle routing. I used two different databases for my website, Firebase for storing photos as well as Mongoose for storing data and user information. User passwords are encrypted with Bcrypt. Passport handles user authentication as well as session persistence. The front end templates were made with Pug. I used tailwindCSS so my project had an organized and uniform format for naming classes.           
+                div(class="m-5 text-xl") I created the webserver using Node.js, along with Express to handle routing. I used two different databases for my website, Firebase for storing photos as well as MongoDB's Mongoose library for storing data and user information. User passwords are encrypted with Bcrypt. Passport handles user authentication as well as session persistence. The front end for this project is built with Pug and TailwindCSS. I decided to use a CSS framework for this project because I've found naming classes can lead to disorganized code and slower development.            
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Development Process
-                div(class="m-5 text-xl") 
+                div(class="m-5 text-xl") I went through a few database structures for this project. I knew I wanted to have different types of posts that displayed as a feed on the homepage. Instead of having one post schema, that had many different optional keys depending on the post, I decided to write separate schemas. This allowed for a more strict schema, which leads to fewer issues in the data later on, and takes advantage of the benefits to Mongoose's schemas. Since the database has different collections of posts, I spent more development time writing queries, and needed to use MongoDB's aggregation pipeline.
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Lessons Learned
-                div(class="m-5 text-xl")
-                img(src="../images/gg_2.bmp" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
+                div(class="m-5 text-xl") I practiced writing queries and using aggregation pipelines for this project. I learned how to access document virtuals from aggregate results using hydrate from Mongoose's API. I learned how to implement infinite scrolling, limiting loading and displaying time for large datasets by only returning sections at a time.
