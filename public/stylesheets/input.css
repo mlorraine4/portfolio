@@ -11,10 +11,6 @@ button {
   background-color: #f5c19e;
 }
 
-#hi {
-  /* background-color: rgb(255, 255, 255, 0.5); */
-}
-
 #back {
   background-image: url("../images/arrow.png");
   background-size: contain;
@@ -63,6 +59,7 @@ button {
   width: 150px;
   text-align: center;
 }
+
 #code:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;

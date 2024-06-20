@@ -11,7 +11,7 @@ block content
         div#bg(class="w-3/4 m-auto max-w-[1860px] pt-10 pb-10")
             div(class="w-2/3 flex flex-col items-center m-auto")
                 div(class="text-medium-gradient font-bold text-3xl p-2 m-5 w-min") Stack
-                div(class="flex justify-end m-auto mb-12")
+                div(class="flex justify-center m-auto mb-12 flex-wrap")
                     div(class="flex flex-col items-end")
                         img(src="../images/icons/node.png" class="m-auto h-auto w-12")
                         div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") Node.js
@@ -32,10 +32,10 @@ block content
                         div(class="font-semibold bg-violet-950 text-white p-1 text-center m-2") TailwindCSS
                 img(src="../images/gop_1.JPG" class="w-full shadow-lg shadow-indigo-500/40 ml-auto mr-auto mt-5 mb-5")
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Project Goals
-                div(class="m-5 text-xl") The main goal of this project was to have two different front ends, one for public users and one for admins. I wanted to create a book blog website where public users can read posts about books, but only admins can perform CRUD operations.
+                div(class="m-5 text-xl") The main goal of this project was to have two different front ends, one for public users and one for admins. Guests can view all admin posts, and authorized admins can access forms to create posts, as well as edit and delete content. I chose to make my website a book blog, where posts are either book reviews or monthly reading wrap ups.
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Development Stack
                 div(class="m-5 text-xl") I created the webserver using Node.js, along with Express to handle routing. I used two different databases for my website, Firebase for storing photos as well as MongoDB's Mongoose library for storing data and user information. User passwords are encrypted with Bcrypt. Passport, through local strategy, handles user authentication  as well as session persistence. The front end for this project is built with Pug and TailwindCSS. I decided to use a CSS framework for this project because I've found naming classes can lead to disorganized code and slower development.            
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Development Process
-                div(class="m-5 text-xl") I went through a few database structures for this project. I knew I wanted to have different types of posts that displayed as a feed on the homepage. Instead of having one post schema, that had many different optional keys depending on the post, I decided to write separate schemas. This allowed for a more strict schema, which leads to fewer issues in the data later on, and takes advantage of the benefits to Mongoose's schemas. Since the database has different collections of posts, I spent more development time writing queries, and needed to use MongoDB's aggregation pipeline to access lists all every post.
+                div(class="m-5 text-xl") I went through a few database structures for this project. I knew I wanted to have different types of posts that displayed as a feed on the homepage. Instead of having one post schema, that had many different optional keys depending on the post, I decided to write separate schemas. This allowed for a more strict schema, which leads to fewer issues in the data later on, and takes advantage of the benefits to Mongoose's schemas. Since the database has different collections of posts, I spent more development time writing queries, and needed to use MongoDB's aggregation pipeline to sort every type of post together.
                 div(class="text-3xl font-bold m-5 text-medium-gradient") Lessons Learned
-                div(class="m-5 text-xl") I practiced writing queries and using aggregation pipelines for this project. I learned how to access document virtuals from aggregate results using hydrate from Mongoose's API. I implemented infinite scrolling, limiting loading and displaying time for large datasets by only returning sections at a time.
+                div(class="m-5 text-xl") I practiced writing queries and using aggregation pipelines for this project. I learned how to access document virtuals from aggregate results using hydrate from Mongoose's API. I implemented infinite scrolling, limiting the time it takes to load and display large datasets by only returning sections at a time.
